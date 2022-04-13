@@ -1,2 +1,9 @@
 class UserNotFoundError(Exception):
     ...
+
+class UserAlreadyCreated(Exception):
+    ...
+
+class DatabaseUpdateError(Exception):
+    ...
+    
