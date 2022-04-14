@@ -24,5 +24,4 @@ async def test_get_user_valid(user_data):
     db_test = MongoDatabase(client_test)
     new_test_user = await db_test.create_user(user_data)
     test_get_user = await db_test.get_user('AbluCat')
-    assert test_get_user
-    print(test_get_user)
+    assert test_get_user, test_get_user
