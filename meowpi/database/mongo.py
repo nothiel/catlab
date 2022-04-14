@@ -33,7 +33,7 @@ class MongoDatabase:
         is_already_created = self.coll.count_documents({'username': user_data.username})
         if is_already_created:
             raise UserAlreadyCreated(f"User with username {user_data.username} is already created.")
-        created_user_id = self.coll.insert_one(user_data).inserted_id
+        created_user_id = self.coll.insert_one(user_data.dict()).inserted_id
         created_user_id = str(created_user_id)
         return created_user_id
         
