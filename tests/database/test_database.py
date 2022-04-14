@@ -1,6 +1,6 @@
 import pydantic
 import pytest
-from meowpi.database.mongo import *
+from meowpi.database.mongo import MongoDatabase
 from pymongo_inmemory import MongoClient
 
 
