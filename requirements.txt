@@ -3,3 +3,6 @@ uvicorn
 pymongo
 python-multipart
 python-jose
+pymongo-inmemory
+pytest-asyncio
+pytest
