@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from meowpi.database.mongo import mongo_database
-from meowpi.models.users import CreateUserSchema
-from meowpi.error_handler import setup_exception_handlers
+from database.mongo import mongo_database
+from models.users import CreateUserSchema
+from error_handler import setup_exception_handlers
 
 app = FastAPI()
 
